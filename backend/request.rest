@@ -1,0 +1,31 @@
+GET http://localhost:5000/buku
+
+###
+GET http://localhost:5000/buku/1
+
+###
+POST http://localhost:5000/buku
+Content-Type: application/json
+
+{
+    "judul": "Dasar Pemrograman",
+    "tahunTerbit": "2021",
+    "harga": 100000,
+    "penerbit": "Gramedia",
+    "penulis": "Alfan"
+}
+
+###
+PATCH http://localhost:5000/buku/1
+Content-Type: application/json
+
+{
+    "judul": "Dasar Sistem Operasi",
+    "tahunTerbit": "2022",
+    "harga": 150000,
+    "penerbit": "Gramedia",
+    "penulis": "Alfan"
+}
+
+###
+DELETE http://localhost:5000/buku/2
